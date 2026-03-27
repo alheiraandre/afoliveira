@@ -1,0 +1,66 @@
+/* css/style.css */
+
+/* Esconde os elementos iniciais para o GSAP animar depois */
+.noshow {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Estilos do Menu Fullscreen */
+#menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #111;
+    z-index: 90; /* Fica abaixo da nav (z-100) mas acima do resto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#menu-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-link {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 1.2;
+}
+
+.menu-link:hover {
+    color: #888;
+}
+
+/* Estilos dos Botões */
+.btn-dwp {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #111;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-dwp:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.btn-dwp-white {
+    background-color: white;
+    color: #111;
+}
+
+.btn-dwp-white:hover {
+    background-color: #e5e5e5;
+}

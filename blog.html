@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | AF Oliveira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="antialiased" data-page="blog">
+
+    <nav class="fixed top-0 w-full z-[100] p-6 md:px-12 flex justify-between items-center text-white transition-all duration-300 bg-black/50 backdrop-blur-sm" id="navbar">
+        <a href="index.html" class="block">
+            <img src="./img/afoliveirab.webp" alt="AF Oliveira" class="h-12 object-contain drop-shadow-md transition-all duration-300" id="nav-logo">
+        </a>
+        <button id="menu-toggle" class="flex flex-col gap-1.5 p-2 cursor-pointer group">
+            <span class="block w-8 h-0.5 bg-white transition-all group-hover:w-10 drop-shadow-md"></span>
+            <span class="block w-6 h-0.5 bg-white transition-all group-hover:w-8 drop-shadow-md"></span>
+            <span class="block w-8 h-0.5 bg-white transition-all group-hover:w-10 drop-shadow-md"></span>
+        </button>
+    </nav>
+
+    <div id="menu-overlay">
+        <div class="absolute top-10 right-10 text-sm tracking-widest uppercase cursor-pointer text-white hover:text-gray-400" id="menu-close">Fechar ✕</div>
+        <div class="flex flex-col gap-4 text-center">
+            <a href="index.html#home" class="menu-link">Início.</a>
+            <a href="index.html#experiencia" class="menu-link">O Método.</a>
+            <a href="index.html#servicos" class="menu-link">Especialidades.</a>
+            <a href="index.html#operacao" class="menu-link">Nossa Atuação.</a>
+            <a href="blog.html" class="menu-link">Blog.</a>
+            <a href="newsletter.html" class="menu-link">Newsletter.</a>
+            <a href="https://www.linkedin.com/company/afoliveira/" target="_blank" class="menu-link mt-8">LinkedIn.</a>
+            <a href="https://www.andreinsights.com" class="text-sm tracking-widest uppercase mt-12 text-gray-400 hover:text-white transition-colors">← Voltar para André Insights</a>
+        </div>
+    </div>
+
+    <header id="blog-header" class="relative w-full h-[60vh] overflow-hidden flex items-center justify-start bg-[#111]">
+        <video autoplay loop muted playsinline class="absolute w-full h-full object-cover opacity-50">
+            <source src="./video/lgt 1.mp4" type="video/mp4">
+        </video>
+        <div class="relative z-10 px-6 md:px-24 max-w-7xl pt-20">
+            <div class="mb-6 flex items-center gap-4">
+                <span class="w-12 h-[1px] bg-white"></span>
+                <span class="text-white text-xs tracking-[0.2em] uppercase font-bold">Conhecimento Prático</span>
+            </div>
+            <h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] noshow">
+                Insights & <br>
+                <span class="text-gray-400">Artigos.</span>
+            </h1>
+        </div>
+    </header>
+
+   
+
+ <section class="py-24 px-6 md:px-24 bg-[#f4f4f4] min-h-screen">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+                
+                <article class="group cursor-pointer noshow" onclick="window.location.href='artigo-gestao-de-produtos.html'">
+                    <div class="aspect-[4/3] bg-[#111] mb-6 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" alt="Equipe em reunião de estratégia de produto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-gray-500 mb-4 block">Estratégia & Inovação</span>
+                    <h3 class="text-2xl font-bold mb-4 text-black group-hover:text-gray-600 transition-colors leading-tight">Gestão de Produtos</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed line-clamp-3">A evolução da função operacional para um papel estratégico que conecta visão de negócio, tecnologia e as reais necessidades dos clientes.</p>
+                    <span class="text-sm font-bold border-b-2 border-black pb-1 group-hover:border-gray-500 group-hover:text-gray-500 transition-all uppercase tracking-wider">Ler Artigo</span>
+                </article>
+                <article class="group cursor-pointer noshow delay-1" onclick="window.location.href='artigo-codigo-humano.html'">
+                    <div class="aspect-[4/3] bg-[#111] mb-6 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="Profissional interagindo com tecnologia no ambiente industrial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-gray-500 mb-4 block">Liderança & Cultura</span>
+                    <h3 class="text-2xl font-bold mb-4 text-black group-hover:text-gray-600 transition-colors leading-tight">O Código Humano da Indústria 4.0</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed line-clamp-3">Por que a tecnologia sozinha não entrega resultados e como o capital humano se tornou a verdadeira raridade na economia digital.</p>
+                    <span class="text-sm font-bold border-b-2 border-black pb-1 group-hover:border-gray-500 group-hover:text-gray-500 transition-all uppercase tracking-wider">Ler Artigo</span>
+                </article>
+                <article class="group cursor-pointer noshow delay-2" onclick="window.location.href='artigo-marketing-5.html'">
+                    <div class="aspect-[4/3] bg-[#111] mb-6 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Tela de computador exibindo gráficos de análise de dados e marketing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-gray-500 mb-4 block">Marketing Estratégico</span>
+                    <h3 class="text-2xl font-bold mb-4 text-black group-hover:text-gray-600 transition-colors leading-tight">Marketing 5.0</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed line-clamp-3">A síntese estratégica entre tecnologia e humanização: como a IA e os dados podem criar valor genuíno em um mundo hiperconectado.</p>
+                    <span class="text-sm font-bold border-b-2 border-black pb-1 group-hover:border-gray-500 group-hover:text-gray-500 transition-all uppercase tracking-wider">Ler Artigo</span>
+                </article>
+                </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-white pt-32 pb-12 px-6 md:px-24 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 mb-24">
+            <div class="noshow">
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-[1] mb-8">Vamos construir <br>o seu projeto.</h2>
+                <a href="https://wa.me/5521993333676" target="_blank" class="btn-dwp">Iniciar Conversa</a>
+            </div>
+            <div class="flex flex-col gap-4 noshow delay-1">
+                <span class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Conecte-se</span>
+                <a href="https://www.linkedin.com/company/afoliveira/" target="_blank" class="text-xl font-bold hover:text-gray-500 transition-colors">LinkedIn ↗</a>
+                <a href="https://www.instagram.com/afoliveira.2026/" target="_blank" class="text-xl font-bold hover:text-gray-500 transition-colors">Instagram ↗</a>
+                <a href="https://www.andreinsights.com" target="_blank" class="text-xl font-bold hover:text-gray-500 transition-colors mt-4 text-gray-400">Holding André Insights ↗</a>
+            </div>
+        </div>
+        <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-medium">
+            <div>&copy; 2026 AF Oliveira. Todos os direitos reservados.</div>
+            <div>Powered by André Insights</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
