@@ -12,28 +12,51 @@
 </head>
 <body class="antialiased" data-page="home">
 
-    <nav class="fixed top-0 w-full z-[100] p-6 md:px-12 flex justify-between items-center text-white transition-all duration-300" id="navbar">
-        <a href="index.html" class="block">
-            <img src="./img/afoliveirab.webp" alt="AF Oliveira" class="h-12 object-contain drop-shadow-md transition-all duration-300" id="nav-logo">
-        </a>
-        <button id="menu-toggle" class="flex flex-col gap-1.5 p-2 cursor-pointer group">
-            <span class="block w-8 h-0.5 bg-white transition-all group-hover:w-10 drop-shadow-md"></span>
-            <span class="block w-6 h-0.5 bg-white transition-all group-hover:w-8 drop-shadow-md"></span>
-            <span class="block w-8 h-0.5 bg-white transition-all group-hover:w-10 drop-shadow-md"></span>
-        </button>
+    <!-- NAV: Card Centralizado e Único Fixo no Topo -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-[100] transition-all duration-300" id="navbar">
+        <div class="bg-[#111111]/80 backdrop-blur-md border border-gray-800 rounded-2xl px-6 py-4 flex justify-end lg:justify-between items-center shadow-2xl">
+            
+            <!-- Spacer invisível para contraventar o alinhamento no desktop -->
+            <div class="hidden lg:block w-6"></div>
+            
+            <!-- Menu Central Único -->
+            <div class="hidden lg:flex items-center gap-5 text-[11px] uppercase tracking-wider font-semibold">
+                <a href="#home" class="text-white hover:text-gray-400 transition-colors">Início</a>
+                <a href="#experiencia" class="text-white hover:text-gray-400 transition-colors">O Método</a>
+                <a href="#servicos" class="text-white hover:text-gray-400 transition-colors">Especialidades</a>
+                <a href="#operacao" class="text-white hover:text-gray-400 transition-colors">Nossa Atuação</a>
+                <a href="blog.html" class="text-white hover:text-gray-400 transition-colors">Blog</a>
+                <a href="newsletter.html" class="text-white hover:text-gray-400 transition-colors">Newsletter</a>
+                <a href="https://www.instagram.com/afoliveira.oficial/" target="_blank" class="text-white hover:text-gray-400 transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/company/afoliveira/" target="_blank" class="text-white hover:text-gray-400 transition-colors">LinkedIn</a>
+                <a href="https://www.andreinsights.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">Holding André Insights</a>
+            </div>
+
+            <!-- Botão Mobile / Spacer à Direita -->
+            <div class="flex items-center lg:w-6 lg:justify-end">
+                <button id="menu-toggle" class="flex lg:hidden flex-col gap-1.5 p-1 cursor-pointer group">
+                    <span class="block w-6 h-0.5 bg-white transition-all group-hover:w-7"></span>
+                    <span class="block w-5 h-0.5 bg-white transition-all group-hover:w-6"></span>
+                    <span class="block w-6 h-0.5 bg-white transition-all group-hover:w-7"></span>
+                </button>
+            </div>
+
+        </div>
     </nav>
 
-    <div id="menu-overlay">
+    <!-- Menu Overlay Mobile -->
+    <div id="menu-overlay" class="hidden">
         <div class="absolute top-10 right-10 text-sm tracking-widest uppercase cursor-pointer text-white hover:text-gray-400" id="menu-close">Fechar ✕</div>
         <div class="flex flex-col gap-4 text-center">
-            <a href="index.html#home" class="menu-link">Início.</a>
-            <a href="index.html#experiencia" class="menu-link">O Método.</a>
-            <a href="index.html#servicos" class="menu-link">Especialidades.</a>
-            <a href="index.html#operacao" class="menu-link">Nossa Atuação.</a>
+            <a href="#home" class="menu-link">Início.</a>
+            <a href="#experiencia" class="menu-link">O Método.</a>
+            <a href="#servicos" class="menu-link">Especialidades.</a>
+            <a href="#operacao" class="menu-link">Nossa Atuação.</a>
             <a href="blog.html" class="menu-link">Blog.</a>
             <a href="newsletter.html" class="menu-link">Newsletter.</a>
-            <a href="https://www.linkedin.com/company/afoliveira/" target="_blank" class="menu-link mt-8">LinkedIn.</a>
-            <a href="https://www.andreinsights.com" class="text-sm tracking-widest uppercase mt-12 text-gray-400 hover:text-white transition-colors">← Voltar para André Insights</a>
+            <a href="https://www.instagram.com/afoliveira.oficial/" target="_blank" class="menu-link">Instagram.</a>
+            <a href="https://www.linkedin.com/company/afoliveira/" target="_blank" class="menu-link">LinkedIn.</a>
+            <a href="https://www.andreinsights.com" target="_blank" class="text-sm tracking-widest uppercase mt-12 text-gray-400 hover:text-white transition-colors">← Voltar para André Insights</a>
         </div>
     </div>
 
@@ -50,9 +73,6 @@
                 Gerindo Complexidade. <br>
                 <span class="text-gray-400">Entregando Certeza.</span>
             </h1>
-            <div class="mt-12 noshow delay-1">
-                <a href="#operacao" class="btn-dwp btn-dwp-white">Ver Nosso Impacto</a>
-            </div>
         </div>
     </header>
 
@@ -62,10 +82,10 @@
                 <span class="text-black text-sm tracking-[0.2em] uppercase font-bold">O Método AF Oliveira</span>
             </div>
             <p class="text-3xl md:text-5xl font-light leading-tight text-gray-900 noshow">
-                Para grandes marcas, a execução perfeita não é acaso. É método. Transformamos a visão executiva em <strong class="font-extrabold">poder operacional</strong>.
+                Para grandes marcas, a execução perfeita não é acaso. É método. Transformo a visão executiva em <strong class="font-extrabold">poder operacional</strong>.
             </p>
             <p class="mt-8 text-lg text-gray-500 max-w-3xl noshow">
-                Lideramos portfólios, construímos PMOs e mentoramos os líderes de amanhã através da interseção entre metodologias ágeis, Inteligência Artificial e disciplina tática.
+                Lidero portfólios, construo PMOs e mentoro os líderes de amanhã através da interseção entre metodologias ágeis, Inteligência Artificial e disciplina tática.
             </p>
         </div>
     </section>
@@ -73,47 +93,83 @@
     <section id="servicos" class="py-32 px-6 md:px-24 bg-[#111] text-white">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 flex justify-between items-end border-b border-gray-800 pb-8 noshow">
-                <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight">Nossas <br>Disciplinas.</h2>
+                <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight">Linha <br>de Atuação.</h2>
                 <div class="hidden md:block">
-                    <img src="./img/esfera.webp" alt="Selo" class="w-24 h-24 object-contain opacity-50 grayscale">
-                </div>
+                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-24">
-                <div class="noshow border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500">
-                    <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">01</span>
-                    <h3 class="text-3xl font-bold mb-4">Projetos & Programas</h3>
-                    <p class="text-gray-400 mb-8 text-lg leading-relaxed">
-                        Liderança ponta a ponta de portfólios complexos. Unimos frameworks ágeis e tradicionais para garantir que o escopo, orçamento e prazos sejam rigorosamente atingidos.
-                    </p>
+                
+                <!-- Card 01 -->
+                <div class="noshow border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500 flex flex-col justify-between">
+                    <div>
+                        <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">01</span>
+                        <h3 class="text-3xl font-bold mb-4">Projetos & Programas</h3>
+                        <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                            Liderança ponta a ponta de portfólios complexos. Unimos frameworks ágeis e tradicionais para garantir que o escopo, orçamento e prazos sejam rigorosamente atingidos.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-block text-[11px] uppercase tracking-widest border border-gray-700 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-white hover:text-black hover:border-white transition-all duration-300">
+                            Saiba mais ↗
+                        </a>
+                    </div>
                 </div>
-                <div class="noshow delay-1 border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500">
-                    <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">02</span>
-                    <h3 class="text-3xl font-bold mb-4">Mentoria Executiva</h3>
-                    <p class="text-gray-400 mb-8 text-lg leading-relaxed">
-                        Apoio direto a C-levels e gerentes. Desenvolvemos liderança ágil e resiliência estratégica para navegar em cenários de alta pressão e incerteza.
-                    </p>
+                
+                <!-- Card 02 -->
+                <div class="noshow delay-1 border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500 flex flex-col justify-between">
+                    <div>
+                        <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">02</span>
+                        <h3 class="text-3xl font-bold mb-4">Mentoria Executiva</h3>
+                        <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                            Apoio direto a C-levels e gerentes. Desenvolvemos liderança ágil e resiliência estratégica para navegar em cenários de alta pressão e incerteza.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-block text-[11px] uppercase tracking-widest border border-gray-700 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-white hover:text-black hover:border-white transition-all duration-300">
+                            Saiba mais ↗
+                        </a>
+                    </div>
                 </div>
-                <div class="noshow border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500">
-                    <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">03</span>
-                    <h3 class="text-3xl font-bold mb-4">Treinamento Corporativo</h3>
-                    <p class="text-gray-400 mb-8 text-lg leading-relaxed">
-                        Como instrutor de elite, capacito suas equipes em Scrum, Kanban, Business Intelligence e aplicação prática de Inteligência Artificial para alavancar a produtividade.
-                    </p>
+                
+                <!-- Card 03 -->
+                <div class="noshow border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500 flex flex-col justify-between">
+                    <div>
+                        <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">03</span>
+                        <h3 class="text-3xl font-bold mb-4">Treinamento Corporativo</h3>
+                        <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                            Como instrutor de elite, capacito suas equipes em Scrum, Kanban, Business Intelligence e aplicação prática de Inteligência Artificial para alavancar a produtividade.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-block text-[11px] uppercase tracking-widest border border-gray-700 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-white hover:text-black hover:border-white transition-all duration-300">
+                            Saiba mais ↗
+                        </a>
+                    </div>
                 </div>
-                <div class="noshow delay-1 border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500">
-                    <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">04</span>
-                    <h3 class="text-3xl font-bold mb-4">Transformação Ágil & IA</h3>
-                    <p class="text-gray-400 mb-8 text-lg leading-relaxed">
-                        Implementação rigorosa de Scrum e frameworks Ágeis para tracionar resultados. Modernizamos o seu PMO e automatizamos fluxos de trabalho com o poder da Inteligência Artificial.
-                    </p>
+                
+                <!-- Card 04 -->
+                <div class="noshow delay-1 border-l-2 border-gray-700 pl-8 hover:border-white transition-colors duration-500 flex flex-col justify-between">
+                    <div>
+                        <span class="text-gray-500 text-sm font-bold tracking-widest mb-4 block">04</span>
+                        <h3 class="text-3xl font-bold mb-4">Transformação Ágil & IA</h3>
+                        <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                            Implementação rigorosa de Scrum e frameworks Ágeis para tracionar resultados. Modernizamos o seu PMO e automatizamos fluxos de trabalho com o poder da Inteligência Artificial.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-block text-[11px] uppercase tracking-widest border border-gray-700 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-white hover:text-black hover:border-white transition-all duration-300">
+                            Saiba mais ↗
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <section id="operacao" class="py-32 bg-[#f4f4f4] overflow-hidden">
         <div class="px-6 md:px-24 mb-16 max-w-6xl">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-black noshow mb-8">Como nós operamos.</h2>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-black noshow mb-8">Como trabalho.</h2>
             <p class="text-xl text-gray-700 leading-relaxed noshow">
                 Com mais de 30 anos de percurso consolidado como Especialista de TI, Gestor de Produtos e Líder de Projetos e Programas (apoiado no PMI e em metodologias Ágeis), tenho-me dedicado a conduzir transformações estruturais, tecnológicas e de negócio. O meu foco sempre foi aliar a execução técnica rigorosa à visão estratégica.
             </p>
@@ -127,7 +183,7 @@
                 
                 <article class="group cursor-pointer noshow border-t-2 border-transparent hover:border-black pt-4 transition-all duration-300">
                     <div class="aspect-[16/9] bg-[#111] mb-6 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" alt="Consultoria e Transformação Digital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" alt="Consultoria e Transformation Digital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
                     </div>
                     <span class="text-xs font-bold tracking-widest uppercase text-gray-500 mb-2 block">Operação Especializada</span>
                     <h3 class="text-2xl font-bold mb-6 text-black leading-tight group-hover:text-gray-600 transition-colors">Consultoria & Transformação Digital</h3>
@@ -171,12 +227,6 @@
             <div class="noshow">
                 <h2 class="text-4xl md:text-6xl font-extrabold leading-[1] mb-8">Vamos construir <br>o seu projeto.</h2>
                 <a href="https://wa.me/5521993333676" target="_blank" class="btn-dwp">Iniciar Conversa</a>
-            </div>
-            <div class="flex flex-col gap-4 noshow delay-1">
-                <span class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Conecte-se</span>
-                <a href="https://www.linkedin.com/company/afoliveira/" target="_blank" class="text-xl font-bold hover:text-gray-500 transition-colors">LinkedIn ↗</a>
-                <a href="https://www.instagram.com/afoliveira.2026/" target="_blank" class="text-xl font-bold hover:text-gray-500 transition-colors">Instagram ↗</a>
-                <a href="https://www.andreinsights.com" target="_blank" class="text-xl font-bold hover:text-gray-500 transition-colors mt-4 text-gray-400">Holding André Insights ↗</a>
             </div>
         </div>
         <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-medium">
